@@ -27,7 +27,7 @@ proto_library(
 ```
 
 
-NOTE: If you have a file called BUILD in the current workind directory already, it'll be overwritten.
+NOTE: If you have a file called BUILD in the current working directory already, it'll be overwritten.
 
 
 ## src_prefix
