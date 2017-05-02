@@ -49,7 +49,7 @@ proto_library(
 
 
 # Gotchas & Limitations
-Bazel 0.4.5 and older had a [bug](https://github.com/bazelbuild/bazel/issues/2916) in the proto_library rule, where transitive dependencies were simply broken. The next release after 0.4.5 will include the fix for that bug. So, depending on when you're reading this, you'll likely have to checkout bazel on HEAD and [build it from source](https://bazel.build/versions/master/docs/install-compile-source.html).
+Bazel 0.4.5 and older had a [bug](https://github.com/bazelbuild/bazel/issues/2916) in the proto_library rule, where proto dependencies were simply broken. The next release after 0.4.5 will include the fix for that bug. So, depending on when you're reading this, you'll likely have to checkout bazel on HEAD and [build it from source](https://bazel.build/versions/master/docs/install-compile-source.html) in order to use the generated BUILD file.
 
 
 Right now, pbtool doesn't recursively search the proto directory. This means that all protos and their dependencies must be in the same directory. Let me know if that's a feature you want/need!
